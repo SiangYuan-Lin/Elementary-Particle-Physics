@@ -119,7 +119,7 @@ $$
 |Palo Verde|~ MeV|11 m|$~10^{-3} \text{eV}^2$|Nuclear Fission|
 |Chooz|~ MeV|1 km|$>8\times10^{-4} \text{eV}^2$ |Fission (Inverse beta decay)|
 |Daya Bay|~5 MeV|1.9 km|$>2\times10^{-4} \text{eV}^2$|Nuclear Fission|
-|RENO|2~10 MeV|~1 km|$\Delta {m_{21}}^2:\:7.9\times10^{-5}\text{eV}^2$ $\Delta {m_{31}}^2:\:2.5\times10^{-3}\text{eV}^2$|Fission (Inverse beta decay)|
+|RENO|2~10 MeV|~1 km|$\Delta {m_{21}}^2:7.9\times10^{-5}\text{eV}^2$ $\Delta {m_{31}}^2:2.5\times10^{-3}\text{eV}^2$|Fission (Inverse beta decay)|
 |DUNE||||
 |MINOS||735 km|$~2.74\times10^-3 \text{eV}^2$|Nuclear Fission|
 |K2K||||Accelerator|
