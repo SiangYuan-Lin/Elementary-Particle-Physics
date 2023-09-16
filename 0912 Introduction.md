@@ -98,7 +98,7 @@ $$ Using Euler's formula on the exponential term and denoting the exponent as $\
 $$
 \cos(\theta_{ij}) - i\sin(\theta_{ij})\Rightarrow\left[1 - 2\sin^2\left(\frac{\theta_{ij}}{2}\right)\right] - i \sin(\theta_{ij})
 $$
-Keeping track of the real part, denoting     
+Keeping track of the real part:
  $$\begin{align*}
 P(\nu_\alpha \to \nu_\beta) &= \delta_{\alpha \beta}\\ 
 &- 4\sum_{i,j}\Re(U_{\alpha i}^* U_{\beta i}U_{\alpha j}U_{\beta j}^*)\sin(\frac{\theta_{ij}}{2})\\
