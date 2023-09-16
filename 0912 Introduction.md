@@ -31,7 +31,7 @@ Previously introduced as the Lorentz invariant, $g_{\mu\nu}$ is the metric tenso
 * **Natural units**: We will work in "God-given" units, where $\hbar = c =1$
 * **Invariant mass**: A particle defined by an energy-momentum four-vector $(E,p_x,p_y,p_z)$ ^[Here we take as $c = 1$ in $E/c$  per the natural units]  . By calculating the Lorentz invariant: $E^2 - {p_x}^2- {p_y}^2- {p_z}^2$ we immediately identify $\sqrt{E^2 - |\mathbf{p}|^2} = m$ as the energy-momentum relation in special relativity, we call $m$ the **invariant mass**. 
 
-![[640px-Modernphysicsfields.svg.png]]
+![Branches of Physics](Figures/640px-Modernphysicsfields.svg.png)
 
 * **Degrees of freedom** : When describing a system with infinite (continuous) degrees of freedom, we resort to understand the interactions through *field equations* , where physical quantities are assigned over all space and time. To name examples: general relativity, fluid mechanics, and electrodynamics. Among the three, electrodynamics is characterized as a *relativistic* field theory.
 
