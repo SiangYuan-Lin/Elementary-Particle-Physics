@@ -1,4 +1,5 @@
-# Review of special relativity
+# Review of special relativity (*a hand-wavy  summary*) 
+
 ## Lorentz transformation
 Consider two inertial frames (observers) $S$ and $S'$, they coincide initially. 
 At time $t=0$, $S'$ is moving with a constant velocity $\vec{v}$ relative to $S$ . 
@@ -12,21 +13,21 @@ t' = \gamma \left[\left(\frac{1}{\gamma^2} - 1\right )\frac{x_0}{v} + t_0 \right
 The remaining $y,z$ components are left unchanged. However, things become much more complicated when there are multiple reference frames and $\vec{v}$ can be pointing anywhere, which brings us to the next topic.
 ## Four-vectors
 A convenient way to keep track of the components and simplify notation is to introduce four-vectors. It can be viewed as a vector in the four-dimensional spacetime. 
-In the Cartesian coordinate system, a vector's norm is unchanged under translation or rotation. The four-vector analog to this property is the Lorentz invariant, which is defined as: $(\Delta t)^2 - (\Delta x)^2-(\Delta y)^2-(\Delta z)^2$ . The scalar product of four-vector is defined as $\mathbf{A}\cdot\mathbf{B} = A^\mu \eta_{\mu\nu} B^\nu \equiv x^\mu x_\mu = A^0B^0 - A^1B^1-A^2B^2-A^3B^3$ , where $\eta$ is termed the *metric* . The *self scalar product* or the "norm" $(A^0)^2 - (A^1)^2-(A^2)^2-(A^3)^2$  is also invariant. 
-. 
-The convention we use for position-time and energy-momentum four vectors is $(ct, x,y,z)$ , and $(\frac{E}{c},p_x,p_y,p_z)$  respectively.
-* **Contravariant vectors** (informally, the "ordinary" vector): *contra* meaning *opposing*, the components of contravariant vectors change oppositely to the change in the basis vector. For example, by scaling the basis vector from 1 cm to 1m, a vector originally $(1,0,0)$ is now $(0.01,0,0)$. We denote contravariant four-vectors with the Einstein summation index as a superscript, i.e. $x^\mu$  
+In the Cartesian coordinate system, a vector's norm is unchanged under translation or rotation. The four-vector analog to this property is the Lorentz invariant, which is defined as: $(\Delta t)^2 - (\Delta x)^2-(\Delta y)^2-(\Delta z)^2$ . We define the scalar product of four-vector is as: $\mathbf{A}\cdot\mathbf{B} = A^\mu \eta_{\mu\nu} B^\nu \equiv x^\mu x_\mu = A^0B^0 - A^1B^1-A^2B^2-A^3B^3$ , where $\eta$ is termed the *metric* (or $g_{\mu\nu}$ from this point onward). The *self scalar product* or the "norm" $(A^0)^2 - (A^1)^2-(A^2)^2-(A^3)^2$  is evidently invariant. 
+
+The convention we use for position-time and energy-momentum four-vector is $(ct, x,y,z)$ , and $(\frac{E}{c},p_x,p_y,p_z)$  respectively.
+* **Contravariant vectors** (informally, the "ordinary" vector): *contra* indicating *opposing*; the components of contravariant vectors change oppositely to the change in the basis vector. For example, by scaling the basis vector from 1 cm to 1m, a vector originally $(1,0,0)$ is now $(0.01,0,0)$. We denote contravariant four-vectors with the Einstein summation index as a superscript, i.e. $x^\mu$  
 * **Covariant vectors**: Having already defining the contravariant vector, covariant vectors change *with* the basis vectors. We denote covariant vectors with the summation index as a subscript, i.e. $x_\mu$ 
 
-The thing that *varies* here refers to not the vector itself, but the components. For example, applying Lorentz transformation to four-vectors $x^\mu$ and $x_\mu$ , we expect the *change* in each component to be *contrarily* related, therefore allowing $x^\mu x_\mu$ to be invariant.
+That which *varies* here refers to not the vector itself, but the components. For example, applying Lorentz transformation to four-vectors $x^\mu$ and $x_\mu$ , we expect the *change* in each component to be *contrarily* related, and in a way negating such transformation, therefore allowing $x^\mu x_\mu$ to remain invariant.
 A metric tensor can transform one of these two types of four-vectors to the other. Our convention here is:
 $$
 g_{\mu\nu} = \begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}$$
-This is called a *metric* in a sense that we are able to calculate a "distance". 
+Otherwise known as the *particle physics* convention. 
+This is termed a *metric* in a sense that we are able to calculate a "distance". 
 $$(ds)^2 = (dx^0)^2 - (dx^1)^2 - (dx^2)^2 - (dx^3)^2 = g_{\mu\nu} dx^\mu dx^\nu$$
-Previously introduced as the Lorentz invariant, $g_{\mu\nu}$ is the metric tensor used in *flat spacetime* that defines such "distance". When viewed as a matrix, it is symmetric and diagonal, evidently, the four-vector component products only yields non-zero terms when the indices $\mu=\nu$ , where the metric tensor is non-zero, i.e. the diagonal. Without going into much detail, the inverse metric tensor is defined such that $g_{\mu\lambda}g^{\lambda\nu} = \delta_\mu^\nu$ . If we are to view $g^{\lambda\nu}$ as a matrix, it would be the same as $g_{\mu\nu}$ , or rather, $\mathrm{diag}(1,-1,-1,-1)$. This can be used to *raise or lower* the summation indices, i.e. $g_{\mu\nu} x^\mu = x_\nu$, $g^{\mu\nu}x_\nu = x^\mu$ following the summation and contraction rules.
+Previously introduced as the Lorentz invariant, $g_{\mu\nu}$ is the metric tensor used in *flat spacetime* that defines such "distance". When viewed as a matrix, it is symmetric and diagonal, evidently, the four-vector component products only yields non-zero terms when the indices $\mu=\nu$ , where the metric tensor is non-zero, i.e. the diagonal. Without going into much detail, the inverse metric tensor is defined such that $g_{\mu\lambda}g^{\lambda\nu} = \delta_\mu^\nu$ . If we are also to view $g^{\lambda\nu}$ as a matrix, it would be identical to $g_{\mu\nu}$ , more explicitly: $\mathrm{diag}(1,-1,-1,-1)$. This can be used to *raise or lower* the summation indices, i.e. $g_{\mu\nu} x^\mu = x_\nu$, $g^{\mu\nu}x_\nu = x^\mu$ following the summation and contraction rules. This "tool" will be used extensively in cross-section, decay rate calculations.
  
-### Brief Introduction to Lorentz Group
 ## Particle dynamics
 * **Natural units**: We will work in "God-given" units, where $\hbar = c =1$
 * **Invariant mass**: A particle defined by an energy-momentum four-vector $(E,p_x,p_y,p_z)$ ^[Here we take as $c = 1$ in $E/c$  per the natural units]  . By calculating the Lorentz invariant: $E^2 - {p_x}^2- {p_y}^2- {p_z}^2$ we immediately identify $\sqrt{E^2 - |\mathbf{p}|^2} = m$ as the energy-momentum relation in special relativity, we call $m$ the **invariant mass**. 
@@ -51,9 +52,7 @@ Previously introduced as the Lorentz invariant, $g_{\mu\nu}$ is the metric tenso
   substituting in the operators gives the Hamilton operator of the electromagnetic field
   $$
   \hat{H}=\sum_{\mathbf{k},\mu}\omega\left(\hat{a}^{\dagger(\mu)}(\mathbf{k})\hat{a}^{\mu}(\mathbf{k}) + \frac{1}{2}\right)
-  $$
-  
-*  **Quantum Field Theory in a nutshell (in a nutshell)** : 
+  $$ 
 ## Path integrals  
 $$
 \bra{\Omega}T\{\phi(x_1)\phi(x_2)\dots\phi(x_n)\}\ket{\Omega} = {\int \mathcal{D}_\phi \phi(x_1)\phi(x_1)\dots\phi(x_n)\exp(iS[\phi])\over\int \mathcal{D}_\phi\exp(iS[\phi])}
@@ -68,6 +67,13 @@ $$
 \braket{f|i} = (\text{constants})^n \int \mathrm{d}x_n\dots\mathrm{d}x_1e^{i\mathcal{L}(x_n,\dot{x}_n)\delta t}\dots e^{i\mathcal{L}(x_1,\dot{x}_1)\delta t}{\underset{\text{continuous limit}}{\Rightarrow}} \braket{f|i} = C^n \int_{x(t_i)=x_i}^{x(t_f)=x_f}\mathcal{D}x(t)e^{iS[x]}
 $$
 Where $\mathcal{D}x$ is a sum over all paths, and $S[x]$ is the action from integrating the Lagrangian $\mathcal{L}$ 
+## Bridging quantum mechanics and special relativity: Quantum Field Theory
+### Canonical quantization (second quantization) formulation (to be completed)
+Quantum field operator ($\hat{\phi}$) : $$
+\hat{\phi}(\vec{x}) = \int \frac{\mathrm{d}^3k}{(2\pi)^3}\frac{1}{\sqrt{2\omega_k}}\left[\hat{a}_\mathbf{k}\exp(-i\vec{\omega}\cdot\vec{x})+\hat{a}^\dagger_\mathbf{k}\exp(i\vec{\omega}\cdot\vec{x})\right]
+$$ Note that $\vec{x} = (t,x,y,z)$ and $\vec{\omega} = (\omega_k,\mathbf{k})$ are four-vectors
+### Path integral formulation (to be completed)
+
 # Quantum Mechanics, but relativistic: Neutrino Oscillation 
 The discovery of neutrinos: Beta decay $n \to p + e^- + \bar{\nu}$ 
 Flavors of neutrinos: $\nu_e, \nu_\mu, \nu_\tau$ These are termed  *flavor eigenstates* (of the interaction Lagrangian as opposing to the *mass eigenstates* of the free Lagrangian) 
@@ -108,12 +114,12 @@ P(\nu_\alpha \to \nu_\beta) &= \delta_{\alpha \beta}\\
 $$ 
 ## 0915 Group Discussion: Neutrino Oscillation experiments
 
-| Name of experiment | Beam Energy | Distance L | $\Delta m_{ij}^2$ | Neutrino Source |
+| Name of experiment | Beam Energy | Distance L | $\Delta {m_{ij}}^2$ | Neutrino Source |
 |---|---|---|---|---|
 |Palo Verde|~ MeV|11 m|$~10^{-3} \text{eV}^2$|Nuclear Fission|
 |Chooz|~ MeV|1 km|$>8\times10^{-4} \text{eV}^2$ |Fission (Inverse beta decay)|
 |Daya Bay|~5 MeV|1.9 km|$>2\times10^{-4} \text{eV}^2$|Nuclear Fission|
-|RENO||~1 km|||
+|RENO|2~10 MeV|~1 km|$\Delta {m_{21}}^2:\:7.9\times10^{-5}\text{eV}^2$ $\Delta {m_{31}}^2:\:2.5\times10^{-3}\text{eV}^2$|Fission (Inverse beta decay)|
 |DUNE||||
 |MINOS||735 km|$~2.74\times10^-3 \text{eV}^2$|Nuclear Fission|
 |K2K||||Accelerator|
