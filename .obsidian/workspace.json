@@ -82,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "ced6506773d5d09d",
@@ -169,9 +170,9 @@
   },
   "active": "0c86bc1b2615d08b",
   "lastOpenFiles": [
-    "Bose Enhanced Quantum Chemistry in Atomic and Molecular Condensates.md",
     "0912 Introduction.md",
     "0919 Relativistic Quantum Mechanics.md",
+    "Bose Enhanced Quantum Chemistry in Atomic and Molecular Condensates.md",
     "Figures/64p.md",
     "Figures/640px-Modernphysicsfields.svg.jpg",
     "Figures/640px-Modernphysicsfields.svg.png",
