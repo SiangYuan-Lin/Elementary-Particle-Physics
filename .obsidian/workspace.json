@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "0912 Introduction.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -156,7 +156,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 309.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,8 +171,8 @@
   "active": "0c86bc1b2615d08b",
   "lastOpenFiles": [
     "0912 Introduction.md",
-    "0919 Relativistic Quantum Mechanics.md",
     "Bose Enhanced Quantum Chemistry in Atomic and Molecular Condensates.md",
+    "0919 Relativistic Quantum Mechanics.md",
     "Figures/64p.md",
     "Figures/640px-Modernphysicsfields.svg.jpg",
     "Figures/640px-Modernphysicsfields.svg.png",
