@@ -36,8 +36,10 @@ Previously introduced as the Lorentz invariant, $g_{\mu\nu}$ is the metric tenso
 
 * **Degrees of freedom** : When describing a system with infinite (continuous) degrees of freedom, we resort to understand the interactions through *field equations* , where physical quantities are assigned over all space and time. To name examples: general relativity, fluid mechanics, and electrodynamics. Among the three, electrodynamics is characterized as a *relativistic* field theory.
 
-* **Quantum operators** : Quantum mechanics revolves around the study of a unique equation of motion: the Schrödinger equation. It is also a *wave* equation, with plane wave solutions, more precisely, the **superposition** of all plane waves. The evolution can be expressed by *algebraic operations* on wave *functions*, or alternatively view the wave functions as a vectors in a Hilbert space, and the equivalent operations are carried out using *quantum-mechanical operators* ,  acting on  a *state vector* instead of a  mathematical functions. Evidently, we can see the parallel between wave superposition and the superposition of (state) vectors. Physical observables can be represented by *Hermitian* linear operators acting on the Hilbert space (spanned by a set of basis vectors). Eigenstates of the observable have eigenvalues as the corresponding physical quantity, analogous to the superposition of plane wave solutions, or rather *eigenfunctions*. $$ \frac{\mathrm{d}f}{\mathrm{d}t} = \{f,H\} + \frac{\partial f}{\partial t} \Rightarrow \frac{\mathrm{d}\hat{f}}{\mathrm{d}t} = -\frac{i}{\hbar}[\hat{f},\hat{H}] + \frac{\partial \hat{f}}{\partial t}
-  $$> From Hamilton's equation to Heisenberg equation
+* **Quantum operators** : Quantum mechanics revolves around the study of a unique equation of motion: the Schrödinger equation. It is also a *wave* equation, with plane wave solutions, more precisely, the **superposition** of all plane waves. The evolution can be expressed by *algebraic operations* on wave *functions*, or alternatively view the wave functions as a vectors in a Hilbert space, and the equivalent operations are carried out using *quantum-mechanical operators* ,  acting on  a *state vector* instead of a  mathematical functions. Evidently, we can see the parallel between wave superposition and the superposition of (state) vectors. Physical observables can be represented by *Hermitian* linear operators acting on the Hilbert space (spanned by a set of basis vectors). Eigenstates of the observable have eigenvalues as the corresponding physical quantity, analogous to the superposition of plane wave solutions, or rather *eigenfunctions*. 
+  $$ \frac{\mathrm{d}f}{\mathrm{d}t} = \{f,H\} + \frac{\partial f}{\partial t} \Rightarrow \frac{\mathrm{d}\hat{f}}{\mathrm{d}t} = -\frac{i}{\hbar}[\hat{f},\hat{H}] + \frac{\partial \hat{f}}{\partial t}
+  $$ 
+> From Hamilton's equation to Heisenberg equation
   
 * **Quantization** : From classical to quantum mechanics, the position and momentum variables are promoted to Hermitian operators. The central relation between these operators is the *canonical commutation relation* $[\hat{X},\hat{P}]= i\hbar$ ,  the quantum analog of *Poisson brackets* in classical mechanics, which governs the time evolution of a *Hamiltonian dynamical system* . It also manifests as the *uncertainty principle* . Working with operators has the advantage of being *concise* , this will be greatly appreciated when the subject system consists of multiple bodies. In single particle quantum systems, we deal with a collection of quantum states, in multi-particle quantum systems, the discussion turns to a collection of particles each with a collection of quantum states. If we promote the state vectors to multi-particle state vectors, then the operators must also be treated by what is termed **second quantization** . Using the annihilation and creation operators alongside the original single particle observable, we may compactly express and work with the interactions and evolution of multi-particle states. Through imposing the commutator and anticommutator relation, we arrive at a theory for bosons and fermions respectively. $$
   \begin{gather*}\Psi = \prod_{i=1}^N\psi_{\alpha i} \equiv \psi_{\alpha 1}\otimes \psi_{\alpha 2} \otimes \dots \otimes \psi_{\alpha N} \Rightarrow \ket{n_{\alpha 1}, n_{\alpha 2}\dots n_{\alpha N}}\\ \hat{o} = \sum_\alpha o_\alpha \ket{\alpha}\bra{\alpha} \quad o_\alpha = \bra{\alpha}\hat{o}\ket{\alpha} \Rightarrow \hat{\mathcal{O}}_1 =\sum_\alpha o_\alpha \hat{n}_\alpha =\sum_\alpha \bra{\alpha}\hat{o}\ket{\alpha} \hat{a}_\alpha^\dagger \hat{a}_\alpha\end{gather*}$$ > From "*What state is each particle in?*" to "*How many particles in each state?*"
@@ -93,23 +95,27 @@ The transition amplitude (propagator) :
 $$
 \braket{\nu_i,0 | \nu_i,\tau} = \exp[-i(E_i t- p_i x)]
 $$
-Since neutrinos are highly relativistic, $vt \sim ct \sim x = L \to t$  , the expression reduces to $\exp[-i(E_i - p_i)L]$  . Here, $E_i$ is the energy of the neutrino beam $(E)$, and $L$ is the distance traveled. First order expansion of the energy-momentum relation:$$
+Since neutrinos are highly relativistic, $vt \sim ct \sim x = L \to t$  , the expression reduces to $\exp[-i(E_i - p_i)L]$  . Here, $E_i$ is the energy of the neutrino beam $(E)$, and $L$ is the distance traveled. First order expansion of the energy-momentum relation:
+$$
 p_i = \sqrt{E^2 - {m_i}^2}\simeq E - \frac{{m_i}^2}{2E}
 $$
-The approximate probability of the neutrino to change from flavor $\alpha$ to $\beta$ is the squared amplitude:$$\begin{align*}
+The approximate probability of the neutrino to change from flavor $\alpha$ to $\beta$ is the squared amplitude:
+$$\begin{align*}
 P(\nu_\alpha\to\nu_\beta)&=\left|\sum_i U^*_{\alpha i} \exp\left(\frac{-i{m_i}^2}{2E}L\right)U_{\beta i}\right|^2\\
 &=\sum_{i,j}U_{\alpha i}^* U_{\beta i}U_{\alpha j}U_{\beta j}^* \exp\left(-i\frac{{m_i}^2 - {m_j}^2}{2E}L\right)\\
 \end{align*}
-$$ Using Euler's formula on the exponential term and denoting the exponent as $\theta_{ij}$  
+$$ 
+ Using Euler's formula on the exponential term and denoting the exponent as $\theta_{ij}$  
 $$
 \cos(\theta_{ij}) - i\sin(\theta_{ij})\Rightarrow\left[1 - 2\sin^2\left(\frac{\theta_{ij}}{2}\right)\right] - i \sin(\theta_{ij})
 $$
 Keeping track of the real part:
- $$\begin{align*}
+$$\begin{align*}
 P(\nu_\alpha \to \nu_\beta) &= \delta_{\alpha \beta}\\ 
 &- 4\sum_{i,j}\Re(U_{\alpha i}^* U_{\beta i}U_{\alpha j}U_{\beta j}^*)\sin(\frac{\theta_{ij}}{2})\\
 & + 2\sum_{i,j}\Im(U_{\alpha i}^* U_{\beta i}U_{\alpha j}U_{\beta j}^*)\sin\left(\theta_{ij}\right)
-\end{align*}$$ The oscillation of mass eigenstates interferes with each other, causing the appearance and disappearance of neutrinos. If neutrinos are massless, then the transition probability to a different flavor is zero. $\Delta {m_{ij}}^2$ is what causes the oscillation. We define the sensitivity factor as: $$
+\end{align*}$$
+ The oscillation of mass eigenstates interferes with each other, causing the appearance and disappearance of neutrinos. If neutrinos are massless, then the transition probability to a different flavor is zero. $\Delta {m_{ij}}^2$ is what causes the oscillation. We define the sensitivity factor as: $$
 \frac{\theta_{ij}}{2} = \frac{\Delta {m_{ij}}^2 L}{4E}
 $$ 
 ## 0915 Group Discussion: Neutrino Oscillation experiments

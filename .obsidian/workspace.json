@@ -8,19 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ac6cdfdff01d95b0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0912 Introduction.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0c86bc1b2615d08b",
+            "id": "0e0e2f03ff85466b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "ced6506773d5d09d",
@@ -168,11 +154,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0c86bc1b2615d08b",
+  "active": "0e0e2f03ff85466b",
   "lastOpenFiles": [
+    "1013.md",
+    "Network architectures.md",
     "0912 Introduction.md",
-    "Bose Enhanced Quantum Chemistry in Atomic and Molecular Condensates.md",
     "0919 Relativistic Quantum Mechanics.md",
+    "0926.md",
+    "Untitled",
+    "Bose Enhanced Quantum Chemistry in Atomic and Molecular Condensates.md",
     "Figures/64p.md",
     "Figures/640px-Modernphysicsfields.svg.jpg",
     "Figures/640px-Modernphysicsfields.svg.png",
